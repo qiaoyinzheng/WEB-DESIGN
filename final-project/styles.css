@@ -1,0 +1,183 @@
+body {
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background: linear-gradient(to right, #fff5c0, #ffffff, #cbefff);
+    line-height: 1.0;
+    /* max-width: 80%;
+    margin-left: auto;
+    margin-right: auto; */
+
+    margin: 8%;
+    margin-bottom: 11%;
+}
+  
+h1 {
+    font-family: "Dela Gothic One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4em;
+  text-align: right;
+  line-height: 1.2;
+  
+}
+
+header {
+    
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+    
+    
+    
+  }
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+    margin: 0 15px;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  .content ul {
+    padding-left: 20%;
+    list-style: square;
+  }
+
+  .content h3, p {
+    padding-left: 7%;
+  }
+
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    border: 1px solid #a7aa7f8e;
+    border-radius: 5px;
+    padding: 5%;
+    margin-bottom: 9%;
+  }
+
+  form label {
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    
+  }
+
+ 
+
+  form input, form button {
+    padding: 1.5%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 1.1em;
+    
+    }
+
+
+  form button {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin-top: 2%;
+  }
+
+  #textarea {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "Didact Gothic", sans-serif;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    /* border-radius: 20%; */
+    font-size: 0.8rem;
+    position: fixed; 
+    bottom: 0;
+    left: 0; 
+    width: 100%; 
+  }
+  
+
+  /* desktop */
+@media (min-width: 1024px) {
+    .content1{grid-area: content1;}
+    .content2{grid-area: content2;}
+    .content3{
+        grid-area: content3;
+        padding: 9%;}
+    .content4{
+        grid-area: content4;
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+            grid-template-rows: auto;
+            grid-template-areas:
+            "content1 content4"
+            "content2 content3"   
+    }
+
+    .a {grid-area: a;}
+    .b {grid-area: b;}
+    .c {grid-area: c;}
+    .d {grid-area: d;}
+    .e {grid-area: e;}
+
+    form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(4, auto); 
+        grid-template-areas:
+            "a d"
+            "b d" 
+            "c d"
+            "e e"
+    }
+        textarea {
+            height: 100%; 
+    }
+
+    body {
+        margin-bottom: 5%;
+    }
+      
+}
+
+@media (prefers-color-scheme: dark) {
+    body{
+        color: white;
+        background: linear-gradient(to right,#cbbc18, #000000, #0022ff);
+    }
+    nav a {
+        color: white;
+      }
+
+      footer {
+        color: white;
+        background-color: black;
+      }
+      form {
+        border: 1px solid rgba(255, 255, 255, 0.698);
+      }
+
+}

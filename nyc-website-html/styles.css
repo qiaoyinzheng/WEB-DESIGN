@@ -1,0 +1,43 @@
+/* CSS Day 1 Styles */
+h1, h2, h3, h4, h5, h6, th {
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    color: #2d2d2d; /* dark grey */
+    font-size: 1.5em;
+    /* default font size: 16px */
+    /* actual font size: 24px */
+}
+
+p,ul,td {
+    font-family: Georgia, serif;
+    color: #2d2d2d; /* dark grey */
+    font-size: 1em;
+}
+
+a:link {
+    color:pink;
+}
+
+ a:visited {
+    color:#2d2d2d;
+    text-decoration: underline;
+}
+
+a:hover {
+    background-color: orange;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+table {
+    width: 100%
+}
+
+.odd {
+    background-color: white;
+}
+
+.even {
+    background-color: lightgrey;
+}

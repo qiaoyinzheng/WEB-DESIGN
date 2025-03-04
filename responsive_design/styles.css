@@ -1,0 +1,155 @@
+
+
+body {
+    background-color: white;
+    width: 90%;
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: 6%;
+    font-family: 'Outfit';
+}
+
+nav ul {
+    display: flex;
+    align-items: flex-start; 
+    list-style-type: none;
+    padding: 0%;
+    margin: 0%;
+}
+
+nav li {
+    margin-right: 15%;
+    color: #5991c4;
+    font-weight: bold;
+}
+
+ul .centered {
+    align-self: center;
+  }
+
+article p {
+    background-color: rgba(68, 160, 213, 0.2);
+    padding: 3%;
+    border-radius: 10px;
+    margin-right: 5%;
+    font-size: 1em;
+}
+
+footer {
+    text-align: center;
+}
+
+a:link, a:visited {
+    color: #004586;
+    text-decoration: none;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 2%;
+}
+
+section {
+    background-color: rgba(242, 228, 195, .8);
+    border-radius: 30px;
+    border: 8px solid rgb(252,248,240);
+    padding: 10%;
+}
+
+span {
+    font-weight: bold;
+}
+
+.tools_tech{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 5%;
+    padding: 5%;
+    border: 10px outset whitesmoke;
+}
+
+.tools {
+    background-color: rgb(240, 240, 240);
+    border: 5px outset rgba(255, 255, 255, 0.1);
+    padding: 6%;
+}
+
+.tech {
+    font-size: 1.3em;
+}
+
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #2d2d2d;
+        color: #e0e0e0;
+    }
+
+    nav li {
+        color: #85c1e9;
+    }
+
+    article p {
+        background-color: rgba(68, 160, 213, 0.1);
+        color: #cfd8dc;
+    }
+
+    a:link, a:visited {
+        color: #82b1ff;
+    }
+
+    section {
+        background-color: rgba(60, 60, 60, 0.8);
+        border: 8px solid #424242;
+        color: #b0bec5;
+    }
+
+    .tools_tech {
+        border: 10px outset #616161;
+    }
+
+    .tools {
+        background-color: #3c3c3c;
+        border: 5px outset #757575;
+    }
+
+    footer {
+        color: #9e9e9e;
+    }
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+        gap: 1%;
+        margin-bottom: 20%;
+    }
+
+    article p {
+        font-size: 0.9em;
+        padding: 5%;
+    }
+
+    .tools_tech {
+        grid-template-columns: 1fr;
+        gap: 1%;
+    }
+
+    section {
+        padding: 4%;
+    }
+}
+
+@media (min-width: 1000px) {
+    article {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    body {
+        margin-top: 4%;
+    }
+}

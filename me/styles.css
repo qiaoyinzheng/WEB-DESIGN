@@ -1,0 +1,47 @@
+body {
+    background-color: blanchedalmond;
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer {
+    color: gray;
+}
+
+#bar {
+    list-style-type: none;
+    padding-left: 0px;
+    display: flex;
+}
+
+#bar li {
+    margin-right: 10%;
+}
+
+a:link, a:visited {
+    color: black;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+h1 {
+    font-size: 2em;
+    color: #002fa7;
+}
+
+.foodie {
+    display: flex;
+    /* width: 95%;
+    margin-left: auto;
+    margin-right: auto; */
+}
+
+.tutorial {
+   padding-left: 40px;
+   padding-top: 60px;
+}

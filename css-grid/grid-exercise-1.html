@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Grid Exercise #1</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+      .a, .b, .c, .d, .e, .f {
+        background-color: rgba(0, 0, 255, .2);
+        /* 0.2 opacity */
+        border: 1px solid blue;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      /* apply grid to parent container */
+      .wrapper {
+        display: grid;
+        /* specify column and row */
+        /* grid-template-columns: 100px 100px 100px; */
+        /* x column each x px wide*/
+
+        /* shorcut */
+        grid-template-columns: repeat(3, 1fr);
+
+        /* fr-fractional unit, auto take, how wide each should be to take the entire browser window  */
+
+        grid-template-rows: 200px 200px 200px;
+        /* tall */
+        gap: 10px ;
+        /* 10px between row 50px between column */
+
+        /* placing the grid items */
+        /* . to create blank space */
+        grid-template-areas: 
+          "b c d"
+          "e a a"
+          "f f .";
+
+          font-family: "Rubik Wet Paint";
+
+      }
+
+      /* change order, assign nickname first to each divs */
+      /* establishing grid area */
+    .a {grid-area: a;}
+    .b {grid-area: b;}
+    .c {grid-area: c;}
+    .d {grid-area: d;}
+    .e {grid-area: e;}
+    .f {grid-area: f;}
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="a">A</div>
+      <div class="b">B</div>
+      <div class="c">C</div>
+      <div class="d">D</div>
+      <div class="e">E</div>
+      <div class="f">F</div>
+    </div>
+  </body>
+</html>
